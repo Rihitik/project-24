@@ -1,0 +1,30 @@
+Project 24 - Manual Chaos Test
+
+Date: Sun Nov 22 04:32:44 UTC 2026
+
+Service:
+Apache2
+
+Objective:
+Test manual recovery from service failure.
+
+Failure Simulation:
+Stopped Apache service using:
+sudo systemctl stop apache2
+
+Failure Verification:
+systemctl is-active apache2 returned inactive.
+
+Recovery Action:
+Started Apache service using:
+sudo systemctl start apache2
+
+Recovery Verification:
+systemctl is-active apache2 returned active.
+curl http://localhost returned Apache web page.
+
+Result:
+Service recovered successfully.
+
+Status:
+PASS

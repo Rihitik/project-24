@@ -1,0 +1,17 @@
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: inactive (dead) since Sun 2026-11-22 04:30:27 UTC; 10s ago
+   Duration: 1h 8min 39.012s
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1110 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+    Process: 5549 ExecStop=/usr/sbin/apachectl graceful-stop (code=exited, status=0/SUCCESS)
+   Main PID: 1250 (code=exited, status=0/SUCCESS)
+        CPU: 350ms
+
+Nov 22 03:21:47 AZLTT0222435e27 systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Nov 22 03:21:48 AZLTT0222435e27 apachectl[1147]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Nov 22 03:21:48 AZLTT0222435e27 systemd[1]: Started apache2.service - The Apache HTTP Server.
+Nov 22 04:30:27 AZLTT0222435e27 systemd[1]: Stopping apache2.service - The Apache HTTP Server...
+Nov 22 04:30:27 AZLTT0222435e27 apachectl[5551]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Nov 22 04:30:27 AZLTT0222435e27 systemd[1]: apache2.service: Deactivated successfully.
+Nov 22 04:30:27 AZLTT0222435e27 systemd[1]: Stopped apache2.service - The Apache HTTP Server.
